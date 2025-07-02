@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             viewMyShopsButton.style.display = 'inline-block';
         } else {
             userDisplay.textContent = '';
-            userDisplay.textContent = 'i';
+            userDisplay.textContent = '';
             document.getElementById('auth-section').style.display = 'block';
             document.getElementById('main-content').style.display = 'none';
             createShopButton.style.display = 'none';
