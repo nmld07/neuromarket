@@ -1,5 +1,3 @@
-// !!! ОБЯЗАТЕЛЬНО ЗАМЕНИ ЭТОТ URL НА ТОЧНЫЙ URL ТВОЕГО БЭКЕНДА НА RAILWAY.APP !!!
-// Например: 'https://web-production-2fdfd.up.railway.app'
 const BACKEND_URL = 'web-production-2fdfd.up.railway.app';
 
 
