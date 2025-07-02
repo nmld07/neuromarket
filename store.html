@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroMarket | Платформа витрин</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>NeuroMarket</h1>
+            <nav>
+                <ul>
+                    <li><a href="/" id="mainPageLink">Главная</a></li>
+                    <li><a href="#" id="myShopsLink" style="display:none;">Мои витрины</a></li>
+                    <li><a href="#" id="neuralNetLink">Нейросеть</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="user-controls">
+                <span id="welcomeMessage"></span>
+                <button id="logoutButton" style="display:none;">Выйти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 id="currentViewHeading">Все Витрины на NeuroMarket</h2>
+        <div id="shops-container" class="shops-grid">
+            <p id="noShopsMessage" style="text-align: center; color: #777;">Загрузка витрин...</p>
+        </div>
+
+        <h3 id="createShopHeading" style="display:none;">Создать новую витрину</h3>
+        <form id="createShopForm" class="shop-form" style="display:none;">
+            <input type="text" id="shopName" placeholder="Название вашей витрины (например, 'Носки от Михаила')"
+                required>
+            <textarea id="shopDescription" placeholder="Краткое описание витрины"></textarea>
+            <input type="url" id="shopLogoUrl" placeholder="URL логотипа витрины (опционально)">
+            <button type="submit">Создать витрину</button>
+            <div id="shopMessage" class="message"></div>
+        </form>
+
+        <div id="shopDetails" style="display:none;">
+            <h2 id="shopDetailsName"></h2>
+            <p id="shopDetailsDescription"></p>
+            <img id="shopDetailsLogo" src="" alt="Логотип витрины" style="max-width: 150px; margin-bottom: 20px;">
+            <h3>Товары этой витрины</h3>
+            <div id="shopProductsContainer" class="products-grid">
+            </div>
+            <button id="backToAllShops" style="display:none;">Вернуться ко всем витринам</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NeuroMarket. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="store.js"></script>
+</body>
+
+</html>
